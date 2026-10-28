@@ -1,0 +1,37 @@
+# 中文 NLI 冒烟测试集：id <TAB> premise(证据) <TAB> hypothesis(条件) <TAB> 期望标签
+# 期望标签可以是多个（用 | 分隔），命中任意一个即算对。
+# 重点是第 9 行：中考 不应该匹配 高中考试。
+entail-01	中考	初中毕业升学考试	entailment
+entail-02	高考	普通高等学校招生全国统一考试	entailment
+entail-03	已取得硕士学位	本科及以上学历	entailment
+entail-04	大学本科毕业	本科及以上学历	entailment
+entail-05	持有高级中学教师资格证	持有教师资格证	entailment
+entail-06	五年工作经验	三年以上工作经验	entailment
+entail-07	英语专业八级	英语水平良好	entailment
+entail-08	在职公务员	有稳定工作	entailment
+entail-09	初中学业水平考试	中考	entailment
+entail-10	已通过大学英语六级考试	英语达到六级水平	entailment
+entail-11	全日制本科	本科学历	entailment
+entail-12	持有 C1 驾驶证	持有驾驶证	entailment
+hard-01	中考	高中考试	neutral|contradiction
+hard-02	高中考试	中考	neutral|contradiction
+contra-01	中考	高考	contradiction
+contra-02	专科毕业	本科及以上学历	contradiction
+contra-03	英语四级	英语六级	contradiction
+contra-04	小学教师资格证	高中教师资格证	contradiction
+contra-05	没有教师资格证	持有教师资格证	contradiction
+contra-06	应届毕业生	有五年以上工作经验	contradiction
+contra-07	计算机专业	会计专业	contradiction
+contra-08	未通过考试	已通过考试	contradiction
+contra-09	高中学历	研究生学历	contradiction
+contra-10	十八岁	未满十六岁	contradiction
+neutral-01	有三年工作经验	有五年以上工作经验	neutral
+neutral-02	持有教师资格证	持有高中教师资格证	neutral
+neutral-03	本科毕业	师范类专业毕业	neutral
+neutral-04	参加过中考	成绩优秀	neutral
+neutral-05	在北京工作	在北京缴纳社保	neutral
+neutral-06	会使用 Python	会使用 Java	neutral
+neutral-07	有驾驶证	有两年驾龄	neutral
+neutral-08	硕士研究生	985 高校毕业	neutral
+neutral-09	高考考生	高考成绩达到一本线	neutral
+neutral-10	在银行工作	在银行做柜员	neutral

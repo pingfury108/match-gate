@@ -1,0 +1,10 @@
+/target
+/models
+*.gguf
+__pycache__/
+.venv/
+
+# 从 bedu-jiaofu-douzi 审计数据抽取的真实试卷标题，不随仓库提供
+tests/fixtures/stage_cases.tsv
+tests/fixtures/stage_hard_probe.tsv
+tests/fixtures/edition_probe.jsonl
